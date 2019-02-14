@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Welcom</title>
+<link rel="stylesheet" href="style.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <script>
+     $(() => {
+         $("#b1").click(() => {
+             $("#id2").hide(2000);
+             $("#id2").show('normal');
+             $("#id3").hide(2000);
+             $("#id3").show('normal');  // slow, normal, fast
+         });
+     });
+
+     $(() => {
+         $("#b2").click(() => {
+             $("#id3").toggle('slow', function() {
+                 var test = $(this).css('display');
+                 if (test == 'none')
+                     alert('hide');
+                 else
+                     alert('show')
+             })
+         });
+     });
+
+ </script>
+
+</head>
+<body>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 ">
+  <center><h3 class="margin">* My Profile *</h3>
+  <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t1.0-9/35228452_2068752526529841_3970733995712315392_n.jpg?_nc_cat=107&_nc_ht=scontent.fbkk5-7.fna&oh=574757738f0f18fc605523c0070da448&oe=5CF4AEBD" class="img-responsive img-circle margin" style="display:inline" alt="google.com" width="350" height="350">
+  <p><table border="10" align="center" width="50%">
+  <tr>
+    <th >STUDENT ID:</th>
+    <td >5735512028</td>
+  </tr>
+  <tr>
+    <th>Name:</th>
+    <td>Papatsorn Pechsri</td>
+  </tr>
+  <tr>
+    <th>Date Of Birth:</th>
+    <td>16 March 1996</td>
+  </tr>
+  <tr>
+    <th>Age:</th>
+    <td>23 years old</td>
+  </tr>
+  <tr>
+    <th>Gender:</th>
+    <td>Female</td>
+  </tr>
+  <tr>
+    <th>My Favorite TV Series:</th>
+    <td>Kamen Rider</td>
+  </tr>
+ 
+ 
+</table></p></center>
+ <br><h3>Heisei Rider</h3>
+<ul>
+  <li>Kamen Rider Kuuga (仮面ライダークウガ Kamen Raidā Kūga) (2000-2001)</li>
+  <li>Kamen Rider Agito (仮面ライダーアギト Kamen Raidā Agito, Masked Rider ΑGITΩ) (2001-2002)</li>
+  <li>Kamen Rider Ryuki (仮面ライダー龍騎 Kamen Raidā Ryūki) (2002-2003)</li>
+  <li>Kamen Rider 555 (仮面ライダー555（ファイズ） Kamen Raidā Faizu, Masked Rider Φ's) (2003-2004))</li>
+  <li>Kamen Rider Blade (仮面ライダー剣（ブレイド） Kamen Raidā Bureido, Masked Rider ♠) (2004-2005)</li>
+  <li>Kamen Rider Hibiki (仮面ライダー響鬼（ヒビキ） Kamen Raidā Hibiki) (2005-2006)</li>
+  <li>Kamen Rider Kabuto (仮面ライダーカブト Kamen Raidā Kabuto) (2006-2007)</li>
+  <li>Kamen Rider Den-O (仮面ライダー電王 Kamen Raidā Den'ō) (2007-2008))</li>
+  <li>Kamen Rider Kiva (仮面ライダーキバ Kamen Raidā Kiba) (2008-2009))</li>
+  <li>Kamen Rider Decade (仮面ライダーディケイド Kamen Raidā Dikeido, Masked Rider DCD) (2009))</li>
+  <li>Kamen Rider W (仮面ライダーＷ（ダブル） Kamen Raidā Daburu) (2009-2010) - first series of the "Phase 2" era</li>
+  <li>Kamen Rider OOO (仮面ライダーＯＯＯ（オーズ） Kamen Raidā Ōzu) (2010-2011)</li>
+  <li>Kamen Rider Fourze (仮面ライダーフォーゼ Kamen Raidā Fōze) (2011-2012)</li>
+  <li>Kamen Rider Gaim (仮面ライダー鎧武（ガイム） Kamen Raidā Gaimu) (2013-2014)</li>
+  <li>Kamen Rider Drive (仮面ライダードライブ Kamen Raidā Doraibu) (2014-2015)</li>
+  <li>Kamen Rider Ghost (仮面ライダーゴースト Kamen Raidā Gōsuto) (2015-2016)</li>
+  <li>Kamen Rider Amazons (仮面ライダーアマゾンズ Kamen Raidā Amazonzu) (2016-2017) - extra series of the Heisei period</li>
+  <li>Kamen Rider Ex-Aid (仮面ライダーエグゼイド Kamen Raidā Eguzeido) (2016-2017)</li>
+  <li>Kamen Rider Build (仮面ライダービルド Kamen Raidā Birudo) (2017-2018)</li>
+  <li>Kamen Rider Zi-O (仮面ライダージオウ Kamen Raidā Jiō) (2018-2019)</li>
+</ul>
+
+<br></div>
+
+
+
+
+ <!-- Footer -->
+<footer class="container-fluid bg-2 text-center">
+  <p id="id1" align="center"> Subject: Distributed computing and web technologies</p>
+<p id="id2" align="center"> Semester 2/2561</p>
+<p id="id3" align="center"> Webpage by 5735512028</p>
+<button id="b1" align="center" style="color: black"> Dhow/Hide </button>
+<button id="b2" align="center" style="color: black"> Popup </button>
+</footer>
+
+
+</body>
+</html>
+
